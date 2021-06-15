@@ -1,6 +1,6 @@
 # Sentiment-Analysis
 
-This project is about sentiment-analysis. Indeed reviews were crawled. Based on those, it was decided whether a review was positiv or negativ.
+This project is about sentiment-analysis. Indeed reviews were crawled with BeautifulSoup. Based on those, it was decided whether a review was positiv or negativ.
 Labels were negativ (1) and positive (0). Reviews with 3,4 and 5 starts were positive and 1,2 star ratings were labeled as negative.
 
 Further details about the project:
