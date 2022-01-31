@@ -46,7 +46,7 @@ classification problem type. The batch size was set to 32. Across a wide range o
 with this batch size (Revisiting Small Batch Training for Deep Neural Networks, 2018).
 
 
-**Limitations and further to-dos:**
+**Limitations and future Improvements**
 - Run analyzises with k-fold cross validation
 - Run analyzises with gridsearch for all classifiers
 - use more hyperparameter variations in RNN (especially on the input_dim regarding the embedding layer [most common words])
