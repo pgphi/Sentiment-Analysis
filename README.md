@@ -1,11 +1,13 @@
 # Sentiment-Analysis
 
+***
 This project is about sentiment-analysis. Indeed reviews were crawled with BeautifulSoup. Based on those, it was decided whether a review was positiv or negativ.
 Labels were negativ (1) and positive (0). Reviews with 3,4 and 5 starts were positive and 1,2 star ratings were labeled as negative.
+***
 
-Further details about the project:
+## Further details about the project:
 
-**Word Embedding**
+### Word Embedding
 A word embedding is a learned representation for text where words that have the same meaning have a similar representation. 
 Each word is represented by a real-valued vector, often tens or hundreds of dimensions. Hence, lower dimensionality vocabulary 
 size and computational issues can be lowered. Hence the uniqueness of our dataset we used an own-trained approach for our embeddings. 
@@ -15,7 +17,7 @@ Training the embeddings was based on the whole dataset (19244 reviews). We kept 
 Analyzing the classifiers was done on Random Forest, Logistic Regression, GausianNB, BernoulliNB, LinearSVC, SVC and the RNN (all by default). 
 The embeddings created by the embedding layer were only used by the RNN.
 
-**Recurrent Neural Network**
+### Recurrent Neural Network
 We use the RNN architecture, hence sequenced text data. The Sequential API is used. Because it's most suitable for our problem. 
 We neither have multiple inputs from different sources (only text data) nor have we multiple outputs (binary labels). 
 The first layer of our model is the Embedding Layer. There the features are generated. The Embedding layer has a size of input_dim x output_dim. 
@@ -46,7 +48,7 @@ classification problem type. The batch size was set to 32. Across a wide range o
 with this batch size (Revisiting Small Batch Training for Deep Neural Networks, 2018).
 
 
-**Limitations and future Improvements**
+### Limitations and further improvements
 - Run analyzises with k-fold cross validation
 - Run analyzises with gridsearch for all classifiers
 - use more hyperparameter variations in RNN (especially on the input_dim regarding the embedding layer [most common words])
